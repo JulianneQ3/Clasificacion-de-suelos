@@ -13,7 +13,7 @@ layout = dbc.Container(
         [
             dbc.Col(navegador, md=12, style={'background-color':'red'}),
             dbc.Col(izquierda, md=6, style={'background-color':'blue'}),
-            dbc.Col(derecha, md=6, style={'background-color':'green'}),
+            dbc.Col("derecha", md=6, style={'background-color':'green'}),
         ]
         )
     ]

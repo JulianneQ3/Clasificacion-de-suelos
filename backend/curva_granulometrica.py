@@ -6,7 +6,13 @@ import matplotlib.pyplot as plt
 import matplotlib.path as mpath
 from scipy.interpolate import interp1d
 
-def curva_granulometrica(abertura, pasa, tamiz):
+pasa=[100, 95, 84, 65, 45, 25, 10, 0]
+
+tamiz=['4.75','2','0.850','0.425','0.250','0.150','0.075','Fondo']
+abertura = [4.75,2,0.850,0.425,0.250,0.150,0.075,0]
+
+
+def curva_granulometrica():
 
     #Calcular D60 D30 D10
 
@@ -85,4 +91,4 @@ def curva_granulometrica(abertura, pasa, tamiz):
     for x in x_values:
         plt.axvline(x=x, color='grey', ls='-', lw='0.3')
 
-    plt.show()
+    return plt
